@@ -1,0 +1,8 @@
+SetEnv APPLICATION_ENV development
+php_value upload_max_filesize 90M
+php_value post_max_size 90M
+php_value memory_limit 512M
+php_value max_input_vars 50000 
+php_value session.auto_start 0
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1
